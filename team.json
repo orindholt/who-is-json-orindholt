@@ -1,0 +1,32 @@
+{
+    "kammerater": [
+        {
+            "fornavn": "Dejene",
+            "mellemnavn": "Daba",
+            "efternavn": "Jebassa",
+            "alder": 35,
+            "hårfarve": "sort"
+        },
+        {
+            "fornavn": "Nils",
+            "mellemnavn": "Sonne",
+            "efternavn": "Andersen",
+            "alder": 26,
+            "hårfarve": "brunt"
+        },
+        {
+            "fornavn": "Sebastian",
+            "mellemnavn": "Christopher",
+            "efternavn": "Andersen",
+            "alder": 18,
+            "hårfarve": "mørkebrunt"
+        },
+        {
+            "fornavn": "Troels",
+            "mellemnavn": "Heldt Agergaard",
+            "efternavn": "Rasmussen",
+            "alder": 35,
+            "hårfarve": "kasket"
+        }
+    ]
+}
