@@ -1,5 +1,5 @@
 {
-    "kammerater": [
+    "teamdata": [
         {
             "fornavn": "Dejene",
             "mellemnavn": "Daba",
@@ -25,7 +25,7 @@
             "fornavn": "Troels",
             "mellemnavn": "Heldt Agergaard",
             "efternavn": "Rasmussen",
-            "alder": 35,
+            "alder": "??",
             "hårfarve": "kasket"
         }
     ]

@@ -1,47 +1,21 @@
-const team = [
-    {
-        "fornavn": "Dejene",
-        "mellemnavn": "Daba",
-        "efternavn": "Jebassa",
-        "alder": 35,
-        "hårfarve": "sort"
-    },
-    {
-        "fornavn": "Nils",
-        "mellemnavn": "Sonne",
-        "efternavn": "Andersen",
-        "alder": 26,
-        "hårfarve": "brunt"
-    },
-    {
-        "fornavn": "Sebastian",
-        "mellemnavn": "Christopher",
-        "efternavn": "Andersen",
-        "alder": 18,
-        "hårfarve": "mørkebrunt"
-    },
-    {
-        "fornavn": "Troels",
-        "mellemnavn": "Heldt Agergaard",
-        "efternavn": "Rasmussen",
-        "alder": 35,
-        "hårfarve": "kasket"
-    }  
-];
-
 let dataContainer = document.querySelector("#data");
 let dataList = document.createElement("ul");
 dataContainer.append(dataList);
 
-function createListItem(prop){
-    team.forEach(arrItem => {
+function createListItem(prop, arr){
+    arr.teamdata.forEach(arrItem => {
         let dataListItem = document.createElement("li");
         dataList.append(dataListItem);
         dataListItem.append(`${prop}: ${arrItem[prop]}`);
     });
 }
 
-createListItem("fornavn");
-createListItem("efternavn");
-createListItem("alder");
-createListItem("hårfarve");
+// fetch promise base
+fetch("../team.json")
+	.then((response) => response.json())
+	.then((data) => {
+        createListItem("fornavn", data);
+        createListItem("efternavn", data);
+        createListItem("alder", data);
+        createListItem("hårfarve", data);
+    });
